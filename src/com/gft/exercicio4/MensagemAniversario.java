@@ -12,4 +12,10 @@ public class MensagemAniversario extends CartaoMensagem {
         System.out.println(destinatario);
     }
 
+    @Override
+    public String toString() {
+        return "MensagemAniversario{" +
+                "Cartão de Aniversário para:'" + destinatario + '\'' +
+                '}';
+    }
 }

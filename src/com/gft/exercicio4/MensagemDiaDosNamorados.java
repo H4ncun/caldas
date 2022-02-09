@@ -14,5 +14,10 @@ public class MensagemDiaDosNamorados extends CartaoMensagem {
 
     }
 
-
+    @Override
+    public String toString() {
+        return "MensagemDiaDosNamorados{" +
+                "Cartão de Dia dos Namorados para:'" + destinatario + '\'' +
+                '}';
+    }
 }

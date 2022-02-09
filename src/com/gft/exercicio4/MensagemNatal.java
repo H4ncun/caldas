@@ -11,4 +11,10 @@ public class MensagemNatal extends CartaoMensagem{
         System.out.println(destinatario);
     }
 
+    @Override
+    public String toString() {
+        return "MensagemNatal{" +
+                "Cartão de Natal para:'" + destinatario + '\'' +
+                '}';
+    }
 }
