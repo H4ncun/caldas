@@ -4,7 +4,7 @@ public class Fatura {
 
     private int num_item;
     private int desc_item;
-   private int qtd_item;
+    private int qtd_item;
     private float preco_uni;
 
     public int getNum_item() {
@@ -40,16 +40,21 @@ public class Fatura {
     }
 
     public Fatura() {
-         setNum_item(0);
-         setDesc_item(0);
+        setNum_item(0);
+        setDesc_item(0);
         setQtd_item(0);
-       setPreco_uni(0.0f);
+        setPreco_uni(0.0f);
     }
 
-    public float calculaFatura(){
+    public Fatura(int num_item, int desc_item, int qtd_item, float preco_uni) {
+        this.num_item = num_item;
+        this.desc_item = desc_item;
+        this.qtd_item = qtd_item;
+        this.preco_uni = preco_uni;
+    }
 
+    public float calculaFatura() {
         float fatura = this.qtd_item * this.preco_uni;
-
-     return fatura;
+        return fatura;
     }
 }

@@ -6,9 +6,6 @@ public class Main {
         Fatura f = new Fatura();
         f.setPreco_uni(12.50f);
         f.setQtd_item(2);
-
-        System.out.println( f.calculaFatura());
-
-
+        System.out.println(f.calculaFatura());
     }
 }
